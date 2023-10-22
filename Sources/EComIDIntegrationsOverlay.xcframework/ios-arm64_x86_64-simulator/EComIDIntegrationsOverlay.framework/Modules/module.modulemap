@@ -1,0 +1,4 @@
+framework module EComIDIntegrationsOverlay {
+  header "EComIDIntegrationsOverlay-Swift.h"
+  requires objc
+}

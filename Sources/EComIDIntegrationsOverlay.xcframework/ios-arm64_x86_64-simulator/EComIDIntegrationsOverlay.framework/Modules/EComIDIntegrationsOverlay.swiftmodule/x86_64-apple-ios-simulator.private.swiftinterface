@@ -1,0 +1,64 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name EComIDIntegrationsOverlay
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum PDPOverlayBuilder {
+  public static func buildPDPOverlayViewController(sizeAName: Swift.String, sizeBName: Swift.String, productImage: UIKit.UIImage, regularFont: Swift.String?, boldFont: Swift.String?, locale: Swift.String?, sizeSelectionAction: Combine.CurrentValueSubject<EComIDIntegrationsOverlay.SelectedSize?, any Swift.Error>) -> UIKit.UIViewController
+}
+public enum FontError : Swift.Error {
+  case failedToRegisterFont
+  public static func == (a: EComIDIntegrationsOverlay.FontError, b: EComIDIntegrationsOverlay.FontError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct HMFont {
+  public let name: Swift.String
+  public static let regular: EComIDIntegrationsOverlay.HMFont
+}
+public struct EComIDFont {
+  public let name: Swift.String
+  public static let regular: EComIDIntegrationsOverlay.EComIDFont
+}
+extension SwiftUI.Font {
+  public struct HM {
+    public static func fixed(_ style: EComIDIntegrationsOverlay.HMFont, size: CoreFoundation.CGFloat) -> SwiftUI.Font
+    public static func relative(_ style: EComIDIntegrationsOverlay.HMFont, size: CoreFoundation.CGFloat, relativeTo textStyle: SwiftUI.Font.TextStyle) -> SwiftUI.Font
+  }
+  public struct EComID {
+    public static func fixed(_ style: EComIDIntegrationsOverlay.EComIDFont, size: CoreFoundation.CGFloat) -> SwiftUI.Font
+    public static func relative(_ style: EComIDIntegrationsOverlay.EComIDFont, size: CoreFoundation.CGFloat, relativeTo textStyle: SwiftUI.Font.TextStyle) -> SwiftUI.Font
+  }
+}
+extension UIKit.UIFont {
+  public struct HM {
+    public static func fixed(_ style: EComIDIntegrationsOverlay.HMFont, size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  }
+  public struct EComID {
+    public static func fixed(_ style: EComIDIntegrationsOverlay.EComIDFont, size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  }
+}
+public enum SelectedSize {
+  case sizeA
+  case sizeB
+  case both
+  public static func == (a: EComIDIntegrationsOverlay.SelectedSize, b: EComIDIntegrationsOverlay.SelectedSize) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension EComIDIntegrationsOverlay.FontError : Swift.Equatable {}
+extension EComIDIntegrationsOverlay.FontError : Swift.Hashable {}
+extension EComIDIntegrationsOverlay.SelectedSize : Swift.Equatable {}
+extension EComIDIntegrationsOverlay.SelectedSize : Swift.Hashable {}

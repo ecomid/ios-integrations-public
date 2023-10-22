@@ -9,15 +9,15 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "EComIDIntegrationsHM",
-            targets: ["EComIDIntegrationsHM"]),
+            name: "EComIDIntegrationsOverlay",
+            targets: ["EComIDIntegrationsOverlay"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .binaryTarget(
-            name: "EComIDIntegrationsHM",
-            path: "./Sources/EComIDIntegrationsHM.xcframework"
+            name: "EComIDIntegrationsOverlay",
+            path: "./Sources/EComIDIntegrationsOverlay.xcframework"
         )
     ]
 )
