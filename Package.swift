@@ -5,19 +5,19 @@ import PackageDescription
 
 let package = Package(
     name: "EComIDIntegrationsPublic",
+    platforms: [.iOS(.v13)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "EComIDIntegrationsPublic",
-            targets: ["EComIDIntegrationsPublic"]),
+            name: "EComIDIntegrationsHM",
+            targets: ["EComIDIntegrationsHM"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "EComIDIntegrationsPublic"),
-        .testTarget(
-            name: "EComIDIntegrationsPublicTests",
-            dependencies: ["EComIDIntegrationsPublic"]),
+        .binaryTarget(
+            name: "EComIDIntegrationsHM",
+            path: "./Sources/EComIDIntegrationsHM.xcframework"
+        )
     ]
 )

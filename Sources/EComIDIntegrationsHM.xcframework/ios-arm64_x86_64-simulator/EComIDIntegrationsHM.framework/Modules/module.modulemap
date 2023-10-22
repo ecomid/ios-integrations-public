@@ -1,0 +1,4 @@
+framework module EComIDIntegrationsHM {
+  header "EComIDIntegrationsHM-Swift.h"
+  requires objc
+}
