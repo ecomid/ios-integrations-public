@@ -60,7 +60,7 @@
           {
             "kind": "Function",
             "name": "buildPDPOverlayViewController",
-            "printedName": "buildPDPOverlayViewController(sizeAName:sizeBName:productImage:regularFont:boldFont:locale:sizeSelectionAction:)",
+            "printedName": "buildPDPOverlayViewController(sizeAName:sizeBName:recommendedSize:productImage:regularFont:boldFont:locale:sizeSelectionAction:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -82,6 +82,21 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "UIImage",
                 "printedName": "UIKit.UIImage",
                 "usr": "c:objc(cs)UIImage"
@@ -98,6 +113,7 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -112,6 +128,7 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -126,6 +143,7 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -158,8 +176,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:25EComIDIntegrationsOverlay17PDPOverlayBuilderO05buildD14ViewController9sizeAName0I5BName12productImage11regularFont04boldO06locale0I15SelectionActionSo06UIViewH0CSS_SSSo7UIImageCSSSgA2P7Combine19CurrentValueSubjectCyAA12SelectedSizeOSgs5Error_pGtFZ",
-            "mangledName": "$s25EComIDIntegrationsOverlay17PDPOverlayBuilderO05buildD14ViewController9sizeAName0I5BName12productImage11regularFont04boldO06locale0I15SelectionActionSo06UIViewH0CSS_SSSo7UIImageCSSSgA2P7Combine19CurrentValueSubjectCyAA12SelectedSizeOSgs5Error_pGtFZ",
+            "usr": "s:25EComIDIntegrationsOverlay17PDPOverlayBuilderO05buildD14ViewController9sizeAName0I5BName15recommendedSize12productImage11regularFont04boldQ06locale0I15SelectionActionSo06UIViewH0CSS_S2SSgSo7UIImageCA3O7Combine19CurrentValueSubjectCyAA08SelectedM0OSgs5Error_pGtFZ",
+            "mangledName": "$s25EComIDIntegrationsOverlay17PDPOverlayBuilderO05buildD14ViewController9sizeAName0I5BName15recommendedSize12productImage11regularFont04boldQ06locale0I15SelectionActionSo06UIViewH0CSS_S2SSgSo7UIImageCA3O7Combine19CurrentValueSubjectCyAA08SelectedM0OSgs5Error_pGtFZ",
             "moduleName": "EComIDIntegrationsOverlay",
             "static": true,
             "declAttributes": [
@@ -1430,21 +1448,21 @@
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlayBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 833,
+      "offset": 969,
       "length": 15,
       "value": "\"Saans-Regular\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlayBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 916,
+      "offset": 1052,
       "length": 15,
       "value": "\"Saans-Regular\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlayBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 995,
+      "offset": 1131,
       "length": 4,
       "value": "\"en\""
     },
@@ -1465,259 +1483,266 @@
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 576,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 733,
+      "offset": 506,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 876,
-      "length": 2,
-      "value": "48"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1079,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1179,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1279,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1446,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1588,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1625,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1853,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1984,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2161,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2228,
-      "length": 2,
-      "value": "48"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2243,
-      "length": 2,
-      "value": "48"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2573,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2704,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2881,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2948,
-      "length": 2,
-      "value": "48"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2963,
-      "length": 2,
-      "value": "48"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3125,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3446,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3602,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3675,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3712,
+      "offset": 778,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
-      "kind": "StringLiteral",
-      "offset": 3742,
-      "length": 12,
-      "value": "\"Powered by\""
+      "kind": "IntegerLiteral",
+      "offset": 972,
+      "length": 2,
+      "value": "16"
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 3819,
+      "offset": 1135,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1231,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1331,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1373,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1410,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1638,
+      "length": 2,
+      "value": "-4"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1770,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2236,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 3994,
+      "offset": 2395,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2462,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2477,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2807,
+      "length": 2,
+      "value": "-4"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2939,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3405,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3564,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3631,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3646,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4087,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4243,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4307,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "StringLiteral",
+      "offset": 4337,
+      "length": 12,
+      "value": "\"Powered by\""
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4414,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4589,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 4049,
+      "offset": 4641,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4680,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 4084,
+      "offset": 4755,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 4361,
+      "offset": 4947,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "StringLiteral",
-      "offset": 4433,
-      "length": 7,
-      "value": "\"Small\""
+      "offset": 5019,
+      "length": 3,
+      "value": "\"S\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "StringLiteral",
-      "offset": 4503,
-      "length": 8,
-      "value": "\"Medium\""
+      "offset": 5092,
+      "length": 3,
+      "value": "\"M\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "StringLiteral",
-      "offset": 4592,
+      "offset": 5171,
+      "length": 3,
+      "value": "\"M\""
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
+      "kind": "StringLiteral",
+      "offset": 5262,
       "length": 13,
       "value": "\"demoProduct\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "StringLiteral",
-      "offset": 4635,
+      "offset": 5305,
       "length": 31,
       "value": "\"com.ecomid.EcomIDIntegrations\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "StringLiteral",
-      "offset": 4745,
+      "offset": 5422,
       "length": 21,
       "value": "\"HMSansLatin-Regular\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "StringLiteral",
-      "offset": 4828,
+      "offset": 5512,
       "length": 22,
       "value": "\"HMSansLatin-SemiBold\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/SwiftUI\/Overlays\/PDPOverlay.swift",
       "kind": "StringLiteral",
-      "offset": 4910,
+      "offset": 5601,
       "length": 4,
       "value": "\"es\""
     },
@@ -1801,56 +1826,56 @@
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/Utils\/Localization.swift",
       "kind": "StringLiteral",
-      "offset": 930,
-      "length": 28,
-      "value": "\"overlay-which-size-to-keep\""
-    },
-    {
-      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/Utils\/Localization.swift",
-      "kind": "StringLiteral",
-      "offset": 1001,
+      "offset": 928,
       "length": 25,
       "value": "\"overlay-keep-both-sizes\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/Utils\/Localization.swift",
       "kind": "StringLiteral",
-      "offset": 1258,
+      "offset": 998,
+      "length": 26,
+      "value": "\"overlay-recommended-size\""
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/Utils\/Localization.swift",
+      "kind": "StringLiteral",
+      "offset": 1256,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/Utils\/Localization.swift",
       "kind": "StringLiteral",
-      "offset": 1343,
+      "offset": 1341,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/Utils\/Localization.swift",
       "kind": "StringLiteral",
-      "offset": 1509,
+      "offset": 1507,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/Utils\/Localization.swift",
       "kind": "StringLiteral",
-      "offset": 1600,
+      "offset": 1598,
       "length": 13,
       "value": "\"Localizable\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/Utils\/Localization.swift",
       "kind": "StringLiteral",
-      "offset": 1773,
+      "offset": 1771,
       "length": 31,
       "value": "\"com.ecomid.EcomIDIntegrations\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Repositories\/eComID\/EComIDIntegrations\/Utils\/Localization.swift",
       "kind": "StringLiteral",
-      "offset": 1879,
+      "offset": 1877,
       "length": 7,
       "value": "\"lproj\""
     },
@@ -1997,21 +2022,28 @@
     {
       "filePath": "\/Users\/patrickrengifo\/Library\/Developer\/Xcode\/DerivedData\/EComIDIntegrations-ciuomjyfgxymvteghimpdfupxbij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/EComIDIntegrationsOverlay\/IntermediateBuildFilesPath\/EComIDIntegrations.build\/Release-iphoneos\/EComIDIntegrationsOverlay.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1183,
+      "offset": 1089,
+      "length": 15,
+      "value": "\"RecoFontColor\""
+    },
+    {
+      "filePath": "\/Users\/patrickrengifo\/Library\/Developer\/Xcode\/DerivedData\/EComIDIntegrations-ciuomjyfgxymvteghimpdfupxbij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/EComIDIntegrationsOverlay\/IntermediateBuildFilesPath\/EComIDIntegrations.build\/Release-iphoneos\/EComIDIntegrationsOverlay.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1329,
       "length": 7,
       "value": "\"close\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Library\/Developer\/Xcode\/DerivedData\/EComIDIntegrations-ciuomjyfgxymvteghimpdfupxbij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/EComIDIntegrationsOverlay\/IntermediateBuildFilesPath\/EComIDIntegrations.build\/Release-iphoneos\/EComIDIntegrationsOverlay.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1322,
+      "offset": 1468,
       "length": 13,
       "value": "\"demoProduct\""
     },
     {
       "filePath": "\/Users\/patrickrengifo\/Library\/Developer\/Xcode\/DerivedData\/EComIDIntegrations-ciuomjyfgxymvteghimpdfupxbij\/Build\/Intermediates.noindex\/ArchiveIntermediates\/EComIDIntegrationsOverlay\/IntermediateBuildFilesPath\/EComIDIntegrations.build\/Release-iphoneos\/EComIDIntegrationsOverlay.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1453,
+      "offset": 1599,
       "length": 6,
       "value": "\"logo\""
     }
