@@ -12,7 +12,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public enum PDPOverlayBuilder {
-  public static func buildPDPOverlayViewController(sizeAName: Swift.String, sizeBName: Swift.String, recommendedSize: Swift.String? = nil, productImage: UIKit.UIImage, regularFont: Swift.String? = nil, boldFont: Swift.String? = nil, locale: Swift.String? = nil, sizeSelectionAction: Combine.CurrentValueSubject<EComIDIntegrationsOverlay.SelectedSize?, any Swift.Error>) -> UIKit.UIViewController
+  public static func buildPDPOverlayViewController(sizeAName: Swift.String, sizeBName: Swift.String, recommendedSize: Swift.String? = nil, productImage: UIKit.UIImage, regularFont: Swift.String? = nil, boldFont: Swift.String? = nil, locale: Swift.String? = nil, sizeSelectionAction: @escaping (EComIDIntegrationsOverlay.SelectedSize) -> Swift.Void, dismissListenerAction: (() -> Swift.Void)? = nil) -> UIKit.UIViewController
 }
 public enum FontError : Swift.Error {
   case failedToRegisterFont
