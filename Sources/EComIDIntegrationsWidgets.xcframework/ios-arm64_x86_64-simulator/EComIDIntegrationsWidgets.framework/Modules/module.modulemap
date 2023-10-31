@@ -1,0 +1,4 @@
+framework module EComIDIntegrationsWidgets {
+  header "EComIDIntegrationsWidgets-Swift.h"
+  requires objc
+}

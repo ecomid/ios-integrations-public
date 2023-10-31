@@ -1,0 +1,66 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name EComIDIntegrationsWidgets
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class UIAccountWidget : UIKit.UIView {
+  @objc deinit
+}
+public struct UIKitStyleConfiguration {
+  public init(regularFont: Swift.String? = nil, semiBoldFont: Swift.String? = nil)
+}
+final public class UIAccountWidgetViewModel : Combine.ObservableObject {
+  public init(name: Swift.String? = nil, brand: Swift.String, locale: Swift.String, styleConfiguration: EComIDIntegrationsWidgets.UIKitStyleConfiguration)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public enum AccountWidgetBuilder {
+  public static func buildUIKitAccountWidgetView(brand: Swift.String, locale: Swift.String, regularFont: Swift.String? = nil, semiBoldFont: Swift.String? = nil) -> UIKit.UIView
+  public static func buildSwiftUIAccountWidgetView(brand: Swift.String, locale: Swift.String, regularFont: Swift.String? = nil, semiBoldFont: Swift.String? = nil) -> some SwiftUI.View
+  
+}
+public enum FontError : Swift.Error {
+  case failedToRegisterFont
+  public static func == (a: EComIDIntegrationsWidgets.FontError, b: EComIDIntegrationsWidgets.FontError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct HMFont {
+  public let name: Swift.String
+  public static let regular: EComIDIntegrationsWidgets.HMFont
+}
+public struct EComIDFont {
+  public let name: Swift.String
+  public static let regular: EComIDIntegrationsWidgets.EComIDFont
+}
+extension SwiftUI.Font {
+  public struct HM {
+    public static func fixed(_ style: EComIDIntegrationsWidgets.HMFont, size: CoreFoundation.CGFloat) -> SwiftUI.Font
+    public static func relative(_ style: EComIDIntegrationsWidgets.HMFont, size: CoreFoundation.CGFloat, relativeTo textStyle: SwiftUI.Font.TextStyle) -> SwiftUI.Font
+  }
+  public struct EComID {
+    public static func fixed(_ style: EComIDIntegrationsWidgets.EComIDFont, size: CoreFoundation.CGFloat) -> SwiftUI.Font
+    public static func relative(_ style: EComIDIntegrationsWidgets.EComIDFont, size: CoreFoundation.CGFloat, relativeTo textStyle: SwiftUI.Font.TextStyle) -> SwiftUI.Font
+  }
+}
+extension UIKit.UIFont {
+  public struct HM {
+    public static func fixed(_ style: EComIDIntegrationsWidgets.HMFont, size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  }
+  public struct EComID {
+    public static func fixed(_ style: EComIDIntegrationsWidgets.EComIDFont, size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  }
+}
+extension EComIDIntegrationsWidgets.FontError : Swift.Equatable {}
+extension EComIDIntegrationsWidgets.FontError : Swift.Hashable {}
